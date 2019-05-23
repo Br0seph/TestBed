@@ -1,0 +1,25 @@
+<mat-drawer-container class="app-menu" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <ng-container *ngIf='menuItems'>
+      <div class="menu-section" *ngFor='let menuItem of menuItems'>
+        <button (click)="showSubSections(menuItem.SectionName)" mat-raised-button>
+          {{ menuItem.SectionName }}
+        </button>
+
+        <ng-container *ngFor='let subSection of menuItem.SubSections'>
+          <ng-container *ngIf="(menuItem.SectionName == $activeSection)">
+            <p routerLink="{{subSection.Route}}">{{ subSection.Name }}</p>
+          </ng-container>
+        </ng-container>
+      </div>
+    </ng-container>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button mat-button class="toggle-button" type="button" color="warn" (click)="drawer.toggle()">
+      <mat-icon>
+        compare_arrows
+      </mat-icon>
+    </button>
+  </div>
+</mat-drawer-container>

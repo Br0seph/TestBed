@@ -1,0 +1,17 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~material-icons/iconfont/material-icons.css';
+
+.app-container {
+    margin-top: -8px;
+    margin-left:-8px;
+    height: 100%;
+}
+
+.app-pagecontent {
+    margin-top: -8px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
