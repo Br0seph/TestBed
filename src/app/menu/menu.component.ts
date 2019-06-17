@@ -9,45 +9,45 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
   $activeSection: any[];
-
-  showSubSections(sectionName) {
-    this.$activeSection = sectionName;
-  }
 
   menuItems: any[] = [
     {
-      "SectionName": "First Section",
-      "SubSections": [
+      SectionName: 'First Section',
+      SubSections: [
         {
-          "Name": "First Sub Section",
-          "Route": "content/first"
+          Name: 'First Sub Section',
+          Route: 'content/first'
         },
         {
-          "Name": "Second Sub Section",
-          "Route": "content/second"
+          Name: 'Second Sub Section',
+          Route: 'content/second'
         }
       ]
     },
     {
-      "SectionName": "Second Section",
-      "SubSections": [
+      SectionName: 'Second Section',
+      SubSections: [
         {
-          "Name": "First Sub Section"
+          Name: 'First Sub Section'
         },
         {
-          "Name": "Second Sub Section"
+          Name: 'Second Sub Section'
         },
         {
-          "Name": "Third Sub Section"
+          Name: 'Third Sub Section'
         },
         {
-          "Name": "Fourth Sub Section"
+          Name: 'Fourth Sub Section'
         }
       ]
     }
   ];
+
+  ngOnInit() {
+  }
+
+  showSubSections(sectionName) {
+    this.$activeSection = sectionName;
+  }
 }

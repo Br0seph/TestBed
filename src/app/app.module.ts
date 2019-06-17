@@ -13,7 +13,7 @@ import { ContentSecondComponent } from './content-second/content-second.componen
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,    
+    MenuComponent,
     ContentFirstComponent, ContentSecondComponent
   ],
   imports: [
