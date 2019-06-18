@@ -14,8 +14,13 @@ export class MenuComponent implements OnInit {
   menuItems: any[] = [
     {
       SectionName: 'Home',
-      Route: 'content/first',
+      Route: 'content/second',
       Icon: 'home'
+    },
+    {
+      SectionName: 'Favourites',
+      Route: 'content/first',
+      Icon: 'rss_feed'
     },
     {
       SectionName: 'Feed',
