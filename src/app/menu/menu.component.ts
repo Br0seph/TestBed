@@ -13,12 +13,34 @@ export class MenuComponent implements OnInit {
 
   menuItems: any[] = [
     {
-      SectionName: 'First Section',
-      Route: 'content/first'
+      SectionName: 'Home',
+      Route: 'content/first',
+      Icon: 'home'
     },
     {
-      SectionName: 'Second Section',
-      Route: 'content/second'
+      SectionName: 'Feed',
+      Route: 'content/second',
+      Icon: 'rss_feed'
+    },
+    {
+      SectionName: 'Payment Details',
+      Route: 'content/second',
+      Icon: 'payment'
+    },
+    {
+      SectionName: 'Invoices',
+      Route: 'content/second',
+      Icon: 'receipt'
+    },
+    {
+      SectionName: 'Contact Settings',
+      Route: 'content/second',
+      Icon: 'settings'
+    },
+    {
+      SectionName: 'Support',
+      Route: 'content/second',
+      Icon: 'face'
     }
   ];
 

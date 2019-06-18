@@ -9,18 +9,14 @@
 
 <mat-sidenav-container color="secondary" class="app-menu" [hasBackdrop]="true">
   <mat-sidenav #drawer mode="side" opened role="navigation">
-    <mat-list>
-      <mat-list-item routerLink='/content/first'>
-        <mat-icon mat-list-icon>home</mat-icon>
-        <p mat-line>Home</p>
-      </mat-list-item>
+    <mat-list *ngFor="let menuItem of menuItems">
 
-      <mat-divider></mat-divider>
+        <mat-list-item routerLink='{{menuItem.Route}}'>
+          <mat-icon mat-list-icon>{{menuItem.Icon}}</mat-icon>
+          <p mat-line>{{menuItem.SectionName}}</p>
+        </mat-list-item>
 
-      <mat-list-item routerLink='/content/second'>
-        <mat-icon mat-list-icon>rss_feed</mat-icon>
-        <p mat-line>Feed</p>
-      </mat-list-item>
+        <mat-divider></mat-divider>     
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content>
