@@ -1,5 +1,6 @@
 .app-menu {
   height: 100%;  
+  width: 100%;
   overflow: hidden;
   min-width: 50px;
   float: left;
@@ -39,4 +40,8 @@
   & .mat-raised-button {
     width: 100%;
   }
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
 }

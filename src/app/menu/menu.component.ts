@@ -14,33 +14,11 @@ export class MenuComponent implements OnInit {
   menuItems: any[] = [
     {
       SectionName: 'First Section',
-      SubSections: [
-        {
-          Name: 'First Sub Section',
-          Route: 'content/first'
-        },
-        {
-          Name: 'Second Sub Section',
-          Route: 'content/second'
-        }
-      ]
+      Route: 'content/first'
     },
     {
       SectionName: 'Second Section',
-      SubSections: [
-        {
-          Name: 'First Sub Section'
-        },
-        {
-          Name: 'Second Sub Section'
-        },
-        {
-          Name: 'Third Sub Section'
-        },
-        {
-          Name: 'Fourth Sub Section'
-        }
-      ]
+      Route: 'content/second'
     }
   ];
 
