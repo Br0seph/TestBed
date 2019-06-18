@@ -14,37 +14,47 @@ export class MenuComponent implements OnInit {
   menuItems: any[] = [
     {
       SectionName: 'Home',
-      Route: 'content/second',
+      Route: 'home',
       Icon: 'home'
     },
     {
-      SectionName: 'Favourites',
-      Route: 'content/first',
-      Icon: 'rss_feed'
+      SectionName: 'Feed',
+      Route: 'feed',
+      Icon: 'notification_important'
     },
     {
-      SectionName: 'Feed',
-      Route: 'content/second',
-      Icon: 'rss_feed'
+      SectionName: 'Favourites',
+      Route: 'favorites',
+      Icon: 'favorite'
+    },
+    {
+      SectionName: 'Discover',
+      Route: 'discover',
+      Icon: 'arrow_right_alt'
+    },
+    {
+      SectionName: 'Products',
+      Route: 'products',
+      Icon: 'dashboard'
     },
     {
       SectionName: 'Payment Details',
-      Route: 'content/second',
+      Route: 'products',
       Icon: 'payment'
     },
     {
       SectionName: 'Invoices',
-      Route: 'content/second',
+      Route: 'products',
       Icon: 'receipt'
     },
     {
       SectionName: 'Contact Settings',
-      Route: 'content/second',
+      Route: 'products',
       Icon: 'settings'
     },
     {
       SectionName: 'Support',
-      Route: 'content/second',
+      Route: 'products',
       Icon: 'face'
     }
   ];

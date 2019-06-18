@@ -10,12 +10,10 @@
 <mat-sidenav-container color="secondary" class="app-menu" [hasBackdrop]="true">
   <mat-sidenav #drawer mode="side" opened role="navigation">
     <mat-list *ngFor="let menuItem of menuItems">
-
         <mat-list-item routerLink='{{menuItem.Route}}'>
-          <mat-icon mat-list-icon>{{menuItem.Icon}}</mat-icon>
+          <mat-icon mat-list-icon color="primary">{{menuItem.Icon}}</mat-icon>
           <p mat-line>{{menuItem.SectionName}}</p>
         </mat-list-item>
-
         <mat-divider></mat-divider>     
     </mat-list>
   </mat-sidenav>

@@ -7,17 +7,24 @@ import { MenuComponent } from './menu/menu.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app.material.module';
-import { ContentFirstComponent } from './content-first/content-first.component';
-import { ContentSecondComponent } from './content-second/content-second.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { HomeComponent } from './home/home.component';
+import { FeedComponent } from './feed/feed.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { DiscoverComponent } from './discover/discover.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ContentFirstComponent, ContentSecondComponent
+    HomeComponent,
+    FeedComponent,
+    FavoritesComponent,
+    DiscoverComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

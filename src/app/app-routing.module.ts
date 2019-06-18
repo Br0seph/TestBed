@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContentFirstComponent } from './content-first/content-first.component';
-import { ContentSecondComponent } from './content-second/content-second.component';
+import { ProductsComponent } from './products/products.component';
+import { DiscoverComponent } from './discover/discover.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { FeedComponent } from './feed/feed.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'content/first', component: ContentFirstComponent },
-  { path: 'content/second', component: ContentSecondComponent }
+  { path: 'discover', component: DiscoverComponent },
+  { path: 'favorites', component: FavoritesComponent },
+  { path: 'feed', component: FeedComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'products', component: ProductsComponent }
 ];
 
 @NgModule({
