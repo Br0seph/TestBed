@@ -16,7 +16,7 @@ import {
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatSidenavModule,
+    MatSidenavModule
   ],
   exports: [
     MatButtonModule,
@@ -27,4 +27,4 @@ import {
     MatSidenavModule
   ]
 })
-export class AppMaterialModule {}
+export class AppMaterialModule { }

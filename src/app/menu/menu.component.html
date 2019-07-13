@@ -1,20 +1,23 @@
 <mat-toolbar color="secondary">
   <mat-toolbar-row>
-    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
-      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button>
+    <div *ngIf="isUserLoggedIn()">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </div>
+
     <!-- <span><img src="./assets/devglan.png"></span> -->
   </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container color="secondary" class="app-menu" [hasBackdrop]="true">
-  <mat-sidenav #drawer mode="side" opened role="navigation">
+  <mat-sidenav #drawer closed mode="side" role="navigation">
     <mat-list *ngFor="let menuItem of menuItems">
-        <mat-list-item routerLink='{{menuItem.Route}}'>
-          <mat-icon mat-list-icon color="primary">{{menuItem.Icon}}</mat-icon>
-          <p mat-line>{{menuItem.SectionName}}</p>
-        </mat-list-item>
-        <mat-divider></mat-divider>     
+      <mat-list-item routerLink='../{{menuItem.Route}}'>
+        <mat-icon mat-list-icon color="primary">{{menuItem.Icon}}</mat-icon>
+        <p mat-line>{{menuItem.SectionName}}</p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content>

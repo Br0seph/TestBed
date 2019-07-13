@@ -5,8 +5,11 @@ import { DiscoverComponent } from './discover/discover.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { FeedComponent } from './feed/feed.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'discover', component: DiscoverComponent },
   { path: 'favorites', component: FavoritesComponent },
   { path: 'feed', component: FeedComponent },

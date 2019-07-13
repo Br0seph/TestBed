@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-menu',
@@ -9,6 +10,7 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
+  $isLoggedIn = true;
   $activeSection: any[];
 
   menuItems: any[] = [
@@ -62,7 +64,8 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  showSubSections(sectionName) {
-    this.$activeSection = sectionName;
+  isUserLoggedIn() {
+    // TODO: Check NGRX store value
+    return true;
   }
 }

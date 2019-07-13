@@ -15,6 +15,7 @@ import { FeedComponent } from './feed/feed.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { ProductsComponent } from './products/products.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductsComponent } from './products/products.component';
     FeedComponent,
     FavoritesComponent,
     DiscoverComponent,
-    ProductsComponent
+    ProductsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
