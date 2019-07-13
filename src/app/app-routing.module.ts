@@ -6,15 +6,36 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { FeedComponent } from './feed/feed.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './services/auth-guard.service';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'discover', component: DiscoverComponent },
-  { path: 'favorites', component: FavoritesComponent },
-  { path: 'feed', component: FeedComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'products', component: ProductsComponent }
+  {
+    path: 'discover',
+    canActivate: [AuthGuard],
+    component: DiscoverComponent
+  },
+  {
+    path: 'favorites',
+    canActivate: [AuthGuard],
+    component: FavoritesComponent
+  },
+  {
+    path: 'feed',
+    canActivate: [AuthGuard],
+    component: FeedComponent
+  },
+  {
+    path: 'home',
+    canActivate: [AuthGuard],
+    component: HomeComponent
+  },
+  {
+    path: 'products',
+    canActivate: [AuthGuard],
+    component: ProductsComponent
+  }
 ];
 
 @NgModule({
