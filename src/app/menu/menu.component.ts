@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   $isLoggedIn = true;
   $activeSection: any[];
@@ -66,6 +67,6 @@ export class MenuComponent implements OnInit {
 
   isUserLoggedIn() {
     // TODO: Check NGRX store value
-    return true;
+    return this.authService.isLoggedIn();
   }
 }
