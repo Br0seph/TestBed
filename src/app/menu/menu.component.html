@@ -1,7 +1,7 @@
 <mat-toolbar color="secondary">
   <mat-toolbar-row>
     <div *ngIf="isUserLoggedIn()">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="menuDrawer.toggle()" color="primary">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
     </div>
@@ -11,7 +11,7 @@
 </mat-toolbar>
 
 <mat-sidenav-container color="secondary" class="app-menu" [hasBackdrop]="true">
-  <mat-sidenav #drawer closed mode="side" role="navigation">
+  <mat-sidenav #menuDrawer closed mode="side" role="navigation">
     <mat-list *ngFor="let menuItem of menuItems">
       <mat-list-item routerLink='../{{menuItem.Route}}'>
         <mat-icon mat-list-icon color="primary">{{menuItem.Icon}}</mat-icon>

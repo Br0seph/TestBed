@@ -9,8 +9,10 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth-guard.service';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'login', component: LoginComponent },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
   {
     path: 'discover',
     canActivate: [AuthGuard],
@@ -35,6 +37,10 @@ const routes: Routes = [
     path: 'products',
     canActivate: [AuthGuard],
     component: ProductsComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/login'
   }
 ];
 
