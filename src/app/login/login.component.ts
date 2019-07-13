@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   // This is where you'd call an authentication service and create a store or throw an auth error
   login() {
-    // TODO: Set NGRX store value, redirect to /home
+    // TODO: Set NGRX store value and then redirect to /home
     return true;
   }
 }

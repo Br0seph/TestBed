@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { TextFieldModule } from '@angular/cdk/text-field';
 
 import {
   MatButtonModule,
   MatMenuModule,
   MatToolbarModule,
+  MatListModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatFormFieldModule
 } from '@angular/material';
 
 @NgModule({
@@ -14,17 +17,23 @@ import {
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
+    MatListModule,
     MatIconModule,
     MatCardModule,
-    MatSidenavModule
+    MatFormFieldModule,
+    MatSidenavModule,
+    TextFieldModule
   ],
   exports: [
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
+    MatListModule,
     MatIconModule,
     MatCardModule,
-    MatSidenavModule
+    MatFormFieldModule,
+    MatSidenavModule,
+    TextFieldModule
   ]
 })
 export class AppMaterialModule { }
