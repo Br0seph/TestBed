@@ -1,7 +1,11 @@
 form {
-    width: 28%;
+    width: 50%;
     margin: auto;
 
+    & mat-form-field {
+        width: 100%;
+    }
+    
     & button {
         display: block;
         margin: auto;
